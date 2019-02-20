@@ -58,7 +58,15 @@ public class MainActivity extends AppCompatActivity {
                 kq.setText(String.valueOf(z));
             }
         });
-
+        chia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                x = Float.parseFloat(so_x.getText().toString());
+                y = Float.parseFloat(so_y.getText().toString());
+                z=x/y;
+                kq.setText(String.valueOf(z));
+            }
+        });
 
     }
 }
