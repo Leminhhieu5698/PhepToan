@@ -8,22 +8,22 @@
     tools:context=".MainActivity">
 
 
-    <TextView
+    <EditText
         android:id="@+id/soa"
         android:layout_width="match_parent"
         android:layout_height="52dp"
 
-        android:text="TextView" />
+        />
 
-    <TextView
+    <EditText
         android:id="@+id/sob"
         android:layout_width="match_parent"
         android:layout_height="52dp"
 
-        android:text="TextView" />
+        />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/cong"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="+"
@@ -31,25 +31,25 @@
         tools:layout_editor_absoluteY="145dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/tru"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="-" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/nhan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="*" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/chia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="/" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/ketq"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Kết Quả" />
