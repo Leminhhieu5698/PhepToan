@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             //        Toast.makeText(MainActivity.this,"Hãy nhập số b", Toast.LENGTH_SHORT).show();
             //    }
                 x = Float.parseFloat(so_x.getText().toString());
-                y = Float.parseFloat(so_x.getText().toString());
+                y = Float.parseFloat(so_y.getText().toString());
                 z=x+y;
                 kq.setText(String.valueOf(z));
             }
@@ -43,17 +43,22 @@ public class MainActivity extends AppCompatActivity {
         tru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //     if(so_x.getText().toString().equals(""));{
-                //          Toast.makeText(MainActivity.this,"Hãy nhập số a", Toast.LENGTH_SHORT).show();
-                //    }
-                //    else if(so_y.getText().toString().equals("")){
-                //        Toast.makeText(MainActivity.this,"Hãy nhập số b", Toast.LENGTH_SHORT).show();
-                //    }
-                x = Float.parseFloat(so_x.getText().toString());
-                y = Float.parseFloat(so_x.getText().toString());
+                  x = Float.parseFloat(so_x.getText().toString());
+                y = Float.parseFloat(so_y.getText().toString());
                 z=x-y;
                 kq.setText(String.valueOf(z));
             }
         });
+        nhan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                x = Float.parseFloat(so_x.getText().toString());
+                y = Float.parseFloat(so_y.getText().toString());
+                z=x*y;
+                kq.setText(String.valueOf(z));
+            }
+        });
+
+
     }
 }
